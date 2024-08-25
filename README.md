@@ -1,47 +1,47 @@
-# Automated Recruiter Email Processing System
+# Automated Recruiter Email Processing System (MVC Architecture)
 
-## Phase 1: Google OAuth 2.0 Setup
+## Setup Instructions
 
-### Prerequisites
-- Python 3.x
-- Google Cloud Console project with Gmail API enabled
-- OAuth 2.0 Client ID and Client Secret
-
-### Setup Instructions
-
-1. Create a project in Google Cloud Console and enable the Gmail API.
-2. Create OAuth 2.0 credentials (Client ID and Client Secret) for a Desktop application.
-3. Download the credentials and save them as `credentials.json` in this directory.
-4. Run the OAuth setup script:
-
-   ```
-   python oauth_setup.py
-   ```
-
-5. Follow the prompts to authorize the application.
-6. Once complete, a `token.json` file will be created with your access token.
-
-### Next Steps
-- Implement email retrieval using the Gmail API
-- Develop resume generation logic with OpenAI GPT
-- Create email response formatting using Markdown
-
-
-## Email Retrieval and Resume Generation
-
-After setting up OAuth 2.0:
-
-1. Add your OpenAI API key to the `.env` file:
+1. Ensure you have Python 3.x installed.
+2. Create a project in Google Cloud Console and enable the Gmail API.
+3. Create OAuth 2.0 credentials (Client ID and Client Secret) for a Desktop application.
+4. Download the credentials and save them as `credentials.json` in the project root directory.
+5. Add your OpenAI API key to the `.env` file:
    
    ```
    OPENAI_API_KEY=your_openai_api_key_here
    ```
 
-2. Run the email processing script:
+6. Run the OAuth setup script (you need to create this separately based on the previous oauth_setup.py):
 
    ```
-   python process_emails.py
+   python oauth_setup.py
    ```
 
-This script will retrieve recruiter emails from your Gmail account, extract job descriptions and company information, and generate tailored resumes using OpenAI GPT.
+7. Follow the prompts to authorize the application.
+8. Run the Flask application:
+
+   ```
+   python -m flask run
+   ```
+
+9. Open a web browser and navigate to `http://localhost:5000` to see the processed emails and generated resumes.
+
+## Project Structure
+
+- `app/`: Main application directory
+  - `models/`: Data models
+  - `views/`: View logic
+  - `controllers/`: Business logic
+  - `services/`: External service integrations
+  - `templates/`: HTML templates
+  - `static/`: Static files (CSS, JS, etc.)
+- `venv/`: Virtual environment
+- `README.md`: Project documentation
+- `.env`: Environment variables (API keys)
+- `.gitignore`: Git ignore file
+
+## Troubleshooting
+
+Check the application logs for detailed error messages and debugging information.
 

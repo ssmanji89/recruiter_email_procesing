@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Processed Recruiter Emails</title>
+</head>
+<body>
+    <h1>Processed Recruiter Emails</h1>
+    {% for email, resume in emails %}
+        <h2>{{ email.subject }}</h2>
+        <p>From: {{ email.sender }}</p>
+        <h3>Generated Resume:</h3>
+        {{ resume.html_content|safe }}
+        <hr>
+    {% endfor %}
+</body>
+</html>
