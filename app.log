@@ -1,0 +1,27 @@
+2024-08-25 00:02:32,572 - INFO - "GET /?state=pYpdygRm22fVmn5MEyfCSGm3m7670w&code=4/0AQlEd8zrmQ_2gmRNy30PepZVUxjSuEJaqCx8JP0aeBdTl91Kwc5NplDQMagGW-fkO_HZCg&scope=https://www.googleapis.com/auth/gmail.modify HTTP/1.1" 200 65
+2024-08-25 00:02:32,769 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-08-25 00:02:33,243 - ERROR - An error occurred while generating the resume: 
+
+You tried to access openai.Completion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2024-08-25 00:02:33,244 - ERROR - An error occurred while formatting the email response: 'NoneType' object is not subscriptable
+2024-08-25 00:02:33,247 - ERROR - An error occurred: 'NoneType' object has no attribute 'encode'
+2024-08-25 00:03:42,624 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-08-25 00:03:43,056 - ERROR - An error occurred while generating the resume: 
+
+You tried to access openai.Completion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2024-08-25 00:03:43,056 - ERROR - An error occurred while formatting the email response: 'NoneType' object is not subscriptable
+2024-08-25 00:03:43,058 - ERROR - An error occurred: 'NoneType' object has no attribute 'encode'
