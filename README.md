@@ -1,4 +1,4 @@
-# Automated Recruiter Email Processing System (MVC Architecture)
+# Automated Recruiter Email Processing System
 
 ## Setup Instructions
 
@@ -12,7 +12,7 @@
    OPENAI_API_KEY=your_openai_api_key_here
    ```
 
-6. Run the OAuth setup script (you need to create this separately based on the previous oauth_setup.py):
+6. Run the OAuth setup script:
 
    ```
    python oauth_setup.py
@@ -22,10 +22,12 @@
 8. Run the Flask application:
 
    ```
-   python -m flask run
+   flask run
    ```
 
-9. Open a web browser and navigate to `http://localhost:5000` to see the processed emails and generated resumes.
+9. Open a web browser and navigate to `http://localhost:5000` to use the application.
+10. Upload your PDF resume when prompted.
+11. View generated tailored resumes and download them as PDFs.
 
 ## Project Structure
 
@@ -35,7 +37,8 @@
   - `controllers/`: Business logic
   - `services/`: External service integrations
   - `templates/`: HTML templates
-  - `static/`: Static files (CSS, JS, etc.)
+  - `uploads/`: Temporary storage for uploaded resumes
+  - `generated_resumes/`: Storage for generated PDF resumes
 - `venv/`: Virtual environment
 - `README.md`: Project documentation
 - `.env`: Environment variables (API keys)
@@ -44,4 +47,3 @@
 ## Troubleshooting
 
 Check the application logs for detailed error messages and debugging information.
-

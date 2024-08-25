@@ -21,3 +21,11 @@ token.json
 
 # macOS-specific files
 .DS_Store
+
+# Uploaded resumes
+app/uploads/*
+!app/uploads/.gitkeep
+
+# Generated resumes
+app/generated_resumes/*
+!app/generated_resumes/.gitkeep
