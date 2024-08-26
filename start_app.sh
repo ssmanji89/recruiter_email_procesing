@@ -1,5 +1,5 @@
 #!/bin/bash
-
+export OPENAI_API_KEY="sk-proj-EfhoddNkylTJgxeaMUgST3BlbkFJpLUoJfYfIy7GPGwkksZf"
 # Start the Recruiter Email Processing App
 
 # Navigate to the project directory

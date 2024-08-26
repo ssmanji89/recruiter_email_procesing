@@ -12,6 +12,8 @@
         <p>From: {{ email.sender }}</p>
         <h3>Job Description:</h3>
         <p>{{ email.job_description }}</p>
+        <h3>Company Information:</h3>
+        <p>{{ email.company_info }}</p>
         <h3>Key Requirements:</h3>
         <ul>
         {% for req in email.key_requirements %}
