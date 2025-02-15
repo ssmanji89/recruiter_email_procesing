@@ -29,3 +29,4 @@ app/uploads/*
 
 # macOS-specific files
 .DS_Store
+node_modules
